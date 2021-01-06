@@ -1,4 +1,6 @@
 import React from 'react';
+import Helmet from 'react-helmet'
+
 import FixedSidebarLeft from "../components/FixedSidebarLeft";
 import FixedSidebarLeftResponsive from "../components/FixedSidebarLeftResponsive";
 import FixedSidebarRight from "../components/FixedSidebarRight";
@@ -14,6 +16,7 @@ import MainContent from "../components/profile/MainContent";
 function App() {
     return (
         <div className="App">
+            <Helmet title="teste" />
            <FixedSidebarLeft/>
            <FixedSidebarLeftResponsive/>
            <FixedSidebarRight/>
