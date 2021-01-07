@@ -1,8 +1,22 @@
 {
   "landing": {
-
+    "title": "Personal Page",
+    "profile" : {
+      "title": "Login to your Account",
+      "Your_Email": "Your Email",
+      "Your_Password": "Your Password",
+      "Remember_Me": "Remember Me",
+      "Forgot_Password": "Forgot my Password",
+      "Login": "Login",
+      "account": "Don’t you have an account",
+      "register": "Register Now",
+      "enjoing": "it’s really simple and you can start enjoing all the benefits"
+    },
+    "home": {
+      "title": ""
+    },
   },
   "profile": {
-    "photos": "Fotos"
+    "photos": "Photos"
   }
 }
