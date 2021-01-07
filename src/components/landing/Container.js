@@ -1,6 +1,9 @@
 import React from "react";
+import {useTranslation} from "react-i18next";
 
 function Container () {
+    const { t } = useTranslation();
+
     return (
         <div className="container">
             <div className="row display-flex">
@@ -41,16 +44,16 @@ function Container () {
 
                         <div className="tab-content">
                             <div className="tab-pane active" id="profile" role="tabpanel">
-                                <div className="title h6">Login to your Account</div>
+                                <div className="title h6">{t('landing.profile.title')}</div>
                                 <form className="content">
                                     <div className="row">
                                         <div className="col col-12 col-xl-12 col-lg-12 col-md-12 col-sm-12">
                                             <div className="form-group label-floating">
-                                                <label className="control-label">Your Email</label>
+                                                <label className="control-label">{t('landing.profile.Your_Email')}</label>
                                                 <input className="form-control" placeholder="" type="email"/>
                                             </div>
                                             <div className="form-group label-floating">
-                                                <label className="control-label">Your Password</label>
+                                                <label className="control-label">{t('landing.profile.Your_Password')}</label>
                                                 <input className="form-control" placeholder="" type="password"/>
                                             </div>
 
@@ -59,14 +62,14 @@ function Container () {
                                                 <div className="checkbox">
                                                     <label>
                                                         <input name="optionsCheckboxes" type="checkbox"/>
-                                                        Remember Me
+                                                        {t('landing.profile.Remember_Me')}
                                                     </label>
                                                 </div>
                                                 <a href="#" className="forgot" data-toggle="modal"
-                                                   data-target="#restore-password">Forgot my Password</a>
+                                                   data-target="#restore-password">{t('landing.profile.Forgot_Password')}</a>
                                             </div>
 
-                                            <a href="#" className="btn btn-lg btn-primary full-width">Login</a>
+                                            <a href="#" className="btn btn-lg btn-primary full-width">{t('landing.profile.Login')}</a>
 
                                             <div className="or"/>
 
@@ -79,14 +82,13 @@ function Container () {
                                             </a>
 
 
-                                            <p>Don’t you have an account? <a href="#">Register Now!</a> it’s really
-                                                simple and you can start enjoing all the benefits!</p>
+                                            <p>{t('landing.profile.account')}? <a href="#">{t('landing.profile.register')}!</a> {t('landing.profile.enjoing')}!</p>
                                         </div>
                                     </div>
                                 </form>
                             </div>
                             <div className="tab-pane" id="home" role="tabpanel">
-                                <div className="title h6">Register to Olympus</div>
+                                <div className="title h6">{t('landing.home.title')}</div>
                                 <form className="content">
                                     <div className="row">
                                         <div className="col col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12">

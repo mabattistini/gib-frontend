@@ -1,5 +1,7 @@
 import React from 'react'
 import Helmet from "react-helmet";
+import { useTranslation, Trans } from "react-i18next";
+
 
 import TitlePage from "../../components/layout/TitlePage";
 import Metas from "../../components/layout/Metas";
@@ -12,9 +14,15 @@ import WindowPopupMainSearch from "../../components/landing/WindowPopupMainSearc
 
 
 function LoginPage() {
+    const { t, i18n } = useTranslation();
+
+    const changeLanguage = lng => {
+        i18n.changeLanguage(lng);
+    }
+
     return (
         <div>
-            <TitlePage title="Personal Page"/>
+            <TitlePage title={t('landing.title')}/>
             <Metas/>
             <CssPage/>
             <JsPage/>
