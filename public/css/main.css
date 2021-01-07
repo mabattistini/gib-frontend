@@ -912,7 +912,7 @@ if the page has a “right panel”, add a class for BODY -- ".page-has-right-pa
   position: relative;
   min-height: 100vh; }
   .landing-page .content-bg-wrap {
-    background-image: url("../img/landing-users.png");
+    background-image: url("../img/nick-nice-dfvyCHzbA5g-unsplash-scaled.jpg");
     background-position: 0 0;
     background-repeat: repeat;
     -webkit-animation: sidedownscroll 30s linear infinite;
@@ -1813,7 +1813,7 @@ section {
   background-color: rgba(98, 54, 178, 0.95); }
 
 .stunning-header-bg1 {
-  background-image: url("../img/landing-users.png"); }
+  background-image: url("../img/nick-nice-dfvyCHzbA5g-unsplash-scaled.jpg"); }
 
 .breadcrumbs-item {
   display: inline-block;
@@ -4860,7 +4860,7 @@ fieldset[disabled] .checkbox, fieldset[disabled] .checkbox input[type=checkbox],
   background-image: url("../img/top-header7.png"); }
 
 .bg-landing {
-  background-image: url("../img/landing-users.png"); }
+  background-image: url("../img/nick-nice-dfvyCHzbA5g-unsplash-scaled.jpg"); }
 
 .bg-users {
   background-image: url("../img/bg-users.png"); }
