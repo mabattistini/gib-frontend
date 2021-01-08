@@ -1,22 +1,26 @@
 {
-  "landing": {
-    "title": "Personal Page",
-    "profile" : {
-      "title": "Login to your Account",
-      "Your_Email": "Your Email",
-      "Your_Password": "Your Password",
-      "Remember_Me": "Remember Me",
-      "Forgot_Password": "Forgot my Password",
-      "Login": "Login",
-      "account": "Don’t you have an account",
-      "register": "Register Now",
-      "enjoing": "it’s really simple and you can start enjoing all the benefits"
-    },
-    "home": {
-      "title": ""
-    },
-  },
-  "profile": {
-    "photos": "Photos"
-  }
+	"landing": {
+		"home": {
+			"title": ""
+		},
+		"page": {
+			"text-1": "Seja você também um super Herói não deixe a liberdade morrer",
+			"text-2": "Somos a melhor e maior rede social com 5 bilhões de usuários ativos em todo o mundo. Compartilhe suas idéias, escreva posts em blogs, mostre suas músicas favoritas, ganhe emblemas e muito mais!"
+		},
+		"profile": {
+			"Forgot_Password": "Esqueci minha senha",
+			"Login": "Entrar",
+			"Remember_Me": "Lembre de mim",
+			"Your_Email": "Seu email",
+			"Your_Password": "Sua senha",
+			"account": "Você não tem uma conta",
+			"enjoing": "é muito simples e você pode começar a desfrutar de todos os benefícios",
+			"register": "Registrar agora",
+			"title": "Faça login na sua conta"
+		},
+		"title": "Página pessoal"
+	},
+	"profile": {
+		"photos": "Fotos"
+	}
 }

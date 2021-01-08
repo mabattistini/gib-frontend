@@ -1,5 +1,26 @@
 {
-  "profile": {
-    "photos": "Photos"
-  }
+	"landing": {
+		"home": {
+			"title": ""
+		},
+		"page": {
+			"text-1": "Sé un superhéroe también, no dejes morir la libertad",
+			"text-2": "Somos la mejor y más grande red social con 5 mil millones de usuarios activos en todo el mundo. ¡Comparte tus pensamientos, escribe publicaciones en blogs, muestra tu música favorita, gana insignias y mucho más!"
+		},
+		"profile": {
+			"Forgot_Password": "Olvidé mi contraseña",
+			"Login": "Iniciar sesión",
+			"Remember_Me": "Recuérdame",
+			"Your_Email": "Tu correo electrónico",
+			"Your_Password": "Tu contraseña",
+			"account": "¿No tienes una cuenta?",
+			"enjoing": "es realmente sencillo y puedes empezar a disfrutar de todos los beneficios",
+			"register": "Regístrate ahora",
+			"title": "Ingrese a su cuenta"
+		},
+		"title": "Página personal"
+	},
+	"profile": {
+		"photos": "Photos"
+	}
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 import Helmet from "react-helmet";
-import { useTranslation, Trans } from "react-i18next";
+import { useTranslation } from "react-i18next";
 
 
 import TitlePage from "../../components/layout/TitlePage";

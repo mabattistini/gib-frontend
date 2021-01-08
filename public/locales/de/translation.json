@@ -1,5 +1,26 @@
 {
-  "profile": {
-    "photos": "Fotos"
-  }
+	"landing": {
+		"home": {
+			"title": ""
+		},
+		"page": {
+			"text-1": "Sei auch ein Superheld, lass die Freiheit nicht sterben",
+			"text-2": "Wir sind das beste und größte soziale Netzwerk mit 5 Milliarden aktiven Nutzern auf der ganzen Welt. Teilen Sie Ihre Gedanken, schreiben Sie Blog-Beiträge, zeigen Sie Ihre Lieblingsmusik, verdienen Sie Abzeichen und vieles mehr!"
+		},
+		"profile": {
+			"Forgot_Password": "Ich habe mein Passwort vergessen",
+			"Login": "Anmeldung",
+			"Remember_Me": "Erinnere dich an mich",
+			"Your_Email": "Deine E-Mail",
+			"Your_Password": "Ihr Passwort",
+			"account": "Hast du kein Konto?",
+			"enjoing": "Es ist ganz einfach und Sie können alle Vorteile nutzen",
+			"register": "Jetzt registrieren",
+			"title": "ins Konto einloggen"
+		},
+		"title": "Persönliche Seite"
+	},
+	"profile": {
+		"photos": "Fotos"
+	}
 }
