@@ -12,6 +12,19 @@ redis.on('error', function (err) {
 });
 
 exports.setKey = function (key, value,expire = null) {
+    try {
+        redis.set(key, value)
+        if (expire == null) {
+            redis.expire(key, expire);
+        }
+        return true
+    } catch (e) {
+        throw e.message
+    }
+}
+
+
+exports.setKeyi = function (key, value,expire = null) {
     return new Promise((resolve, reject) => {
         try {
             redis.set(key, value)
@@ -25,7 +38,7 @@ exports.setKey = function (key, value,expire = null) {
     })
 }
 
-exports.getKey = function (key) {
+exports.getKey1 = function (key) {
     return new Promise((resolve, reject) => {
         try {
             resolve(redis.get(key))
@@ -35,3 +48,6 @@ exports.getKey = function (key) {
     })
 }
 
+exports.getKey = function (key) {
+    return redis.get(key)
+}
