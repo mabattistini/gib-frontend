@@ -9,9 +9,10 @@
 import redis from "redis";
 import {host, port} from '../config/redisConfig.json'
 
+
 const client = redis.createClient({
-    host      : host,
-    port      : port
+    host      : '127.0.0.1',
+    port      : 6379
 });
 
 

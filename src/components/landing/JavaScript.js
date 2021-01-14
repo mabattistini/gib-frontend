@@ -19,3 +19,6 @@ function JavaScriptLandig(props) {
         </Helmet>
     )
 }
+
+
+module.exports = JavaScriptLandig

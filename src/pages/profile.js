@@ -20,9 +20,6 @@ import MainContent from "../components/profile/MainContent";
 import JsPage from "../components/layout/JsPage";
 
 
-
-
-
 function App() {
     return (
         <div className="App">

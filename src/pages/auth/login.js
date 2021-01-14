@@ -11,6 +11,7 @@ import HeaderStdLanding from '../../components/landing/HeaderStdLanding'
 import Container from "../../components/landing/Container";
 import WindowPopupRestorePass from "../../components/landing/WindowPopupRestorePass";
 import WindowPopupMainSearch from "../../components/landing/WindowPopupMainSearch";
+import JavaScriptLandig from '../../components/landing/HeaderStdLanding'
 
 
 function LoginPage() {
@@ -31,6 +32,7 @@ function LoginPage() {
             <Container/>
             <WindowPopupRestorePass/>
             <WindowPopupMainSearch/>
+            <JavaScriptLandig/>
         </div>
     )
 }
