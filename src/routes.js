@@ -1,5 +1,5 @@
 import React from "react";
-import {Route, BrowserRouter} from 'react-router-dom';
+import {Route, BrowserRouter, Switch} from 'react-router-dom';
 
 import StoreProvider from "./components/Store/Provider";
 import RoutesPrivate from "./components/routes/private/Private";
@@ -11,10 +11,10 @@ import Profile from './pages/profile';
 function Routes(){
     return (
         <StoreProvider>
-            <BrowserRouter>
+            <Switch>
                 <Route component={LoginPage} path="/login"  />
                 <RoutesPrivate component={Profile} path="/"  exact />
-            </BrowserRouter>
+            </Switch>
         </StoreProvider>
     )
 }
