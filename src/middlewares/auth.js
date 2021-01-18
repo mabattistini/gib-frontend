@@ -1,4 +1,3 @@
-import redisController from '../controllers/redis.controller'
 
 function authMiddleware(o, next) {
     // if (redisController.getKey('token')) {

@@ -1,8 +1,45 @@
-import React from "react";
+import React, {useState, useContext} from "react";
 import {useTranslation} from "react-i18next";
+import {useHistory} from 'react-router-dom'
+
+import StoreContext from "../Store/Context";
+
+function initialState() {
+    return {email: '', password: ''}
+}
+
+function login({email, password}) {
+    if (email === '' && password === '1234') {
+        return {token: '1234'}
+    }
+    return {'error': 'Usuario ou senha invalido'}
+}
 
 function Container () {
     const { t } = useTranslation();
+
+    const [values, setValues] = useState(initialState())
+    const { setToken} = useContext(StoreContext)
+    const history = useHistory()
+
+    function onChange(event) {
+        const {value, name} = event.target
+        setValues({
+            ...values,
+            [name]: value
+        })
+    }
+
+    function onSubmit(event) {
+        event.preventDefault()
+        const { token } = login(values)
+
+        if (token) {
+            setToken(token)
+            return history.push('/')
+        }
+        setValues(initialState())
+    }
 
     return (
         <div className="container">
@@ -41,16 +78,18 @@ function Container () {
                         <div className="tab-content">
                             <div className="tab-pane active" id="profile" role="tabpanel">
                                 <div className="title h6">{t('landing.profile.title')}</div>
-                                <form className="content">
+                                <form className="content" onSubmit={onSubmit}>
                                     <div className="row">
                                         <div className="col col-12 col-xl-12 col-lg-12 col-md-12 col-sm-12">
                                             <div className="form-group label-floating">
                                                 <label className="control-label">{t('landing.profile.Your_Email')}</label>
-                                                <input className="form-control" placeholder="" type="email"/>
+                                                <input className="form-control" placeholder="" type="email"
+                                                       onChange={onChange} value={values.email}/>
                                             </div>
                                             <div className="form-group label-floating">
                                                 <label className="control-label">{t('landing.profile.Your_Password')}</label>
-                                                <input className="form-control" placeholder="" type="password"/>
+                                                <input className="form-control" placeholder="" type="password"
+                                                       onChange={onChange} value={values.password}/>
                                             </div>
 
                                             <div className="remember">
@@ -67,15 +106,6 @@ function Container () {
 
                                             <a href="#" className="btn btn-lg btn-primary full-width">{t('landing.profile.Login')}</a>
 
-                                            <div className="or"/>
-
-                                            <a href="#" className="btn btn-lg bg-facebook full-width btn-icon-left">
-                                                <i className="fab fa-facebook-f" aria-hidden="true"/>Login with Facebook
-                                            </a>
-
-                                            <a href="#" className="btn btn-lg bg-twitter full-width btn-icon-left">
-                                                <i className="fab fa-twitter" aria-hidden="true"/>Login with Twitter
-                                            </a>
 
 
                                             <p>{t('landing.profile.account')}? <a href="#">{t('landing.profile.register')}!</a> {t('landing.profile.enjoing')}!</p>
@@ -142,8 +172,6 @@ function Container () {
                                     </div>
                                 </form>
                             </div>
-
-
                         </div>
                     </div>
                 </div>
